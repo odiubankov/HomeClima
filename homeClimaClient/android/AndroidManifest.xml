@@ -64,6 +64,16 @@
     </activity>
 
     <!-- For adding service(s) please check: https://wiki.qt.io/AndroidServices -->
+    <service android:process=":qt" android:name=".ClientService">
+        <!-- android:process=":qt" is needed to force the service to run on a separate
+        process than the Activity -->
+
+        <!-- .... -->
+
+        <!-- Background running -->
+        <meta-data android:name="android.app.background_running" android:value="true"/>
+        <!-- Background running -->
+    </service>
 
     </application>
 
