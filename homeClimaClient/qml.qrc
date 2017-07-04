@@ -17,5 +17,6 @@
         <file>SplashScreen.qml</file>
         <file>ConnectionAddress.qml</file>
         <file>InvalidInputDialog.qml</file>
+        <file>StartServiceTmp.qml</file>
     </qresource>
 </RCC>

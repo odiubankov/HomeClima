@@ -1,7 +1,20 @@
+#include "InputValidator.h"
+#include "ServiceOriginator.h"
+
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 
-#include "InputValidator.h"
+
+namespace{
+
+    void registerQMLTypes()
+    {
+        qmlRegisterType<homeclima::InputValidator>("HomeClima", 0, 0, "InputValidator");
+        qmlRegisterType<homeclima::ServiceOriginator>("HomeClima", 0, 0, "ServiceOriginator");
+    }
+
+}
+
 
 int main(int argc, char *argv[])
 {
@@ -13,7 +26,7 @@ int main(int argc, char *argv[])
     if (engine.rootObjects().isEmpty())
         return -1;
 
-    qmlRegisterType<homeclima::InputValidator>("HomeClima", 0, 0, "InputValidator");
+    registerQMLTypes();
 
     return app.exec();
 }

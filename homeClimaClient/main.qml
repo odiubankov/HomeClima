@@ -17,7 +17,8 @@ ApplicationWindow {
 
         function showConnectionScreen(){
             stackView.pop();
-            stackView.push(Qt.resolvedUrl("ConnectionAddress.qml"))
+//            stackView.push(Qt.resolvedUrl("ConnectionAddress.qml"));
+            stackView.push(Qt.resolvedUrl("StartServiceTmp.qml"))
         }
     }
 

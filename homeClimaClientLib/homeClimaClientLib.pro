@@ -4,7 +4,8 @@
 #
 #-------------------------------------------------
 
-QT       -= gui
+QT -= gui
+QT += androidextras
 
 TARGET = homeClimaClientLib
 TEMPLATE = lib
@@ -22,10 +23,12 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    InputValidator.cpp
+    InputValidator.cpp \
+    ServiceOriginator.cpp
 
 HEADERS += \
-    InputValidator.h
+    InputValidator.h \
+    ServiceOriginator.h
 unix {
     target.path = /usr/lib
     INSTALLS += target

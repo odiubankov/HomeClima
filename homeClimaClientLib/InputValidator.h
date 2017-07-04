@@ -1,7 +1,7 @@
 #ifndef INPUTVALIDATOR_H
 #define INPUTVALIDATOR_H
 
-#include <qobject.h>
+#include <QObject>
 
 
 namespace homeclima {
@@ -11,7 +11,7 @@ namespace homeclima {
         Q_OBJECT
 
     public:
-        explicit InputValidator(QObject* parent = Q_NULLPTR);
+        explicit InputValidator(QObject* parent = nullptr);
 
         Q_INVOKABLE bool isValidIP(const QString& ipAddress) const;
         Q_INVOKABLE bool isValidPort(const QString& port) const;

@@ -2,6 +2,8 @@ TEMPLATE = subdirs
 
 SUBDIRS += \
     homeClimaClient \
-    homeClimaClientLib
+    homeClimaClientLib \
+    homeClimaClientService
 
 homeClimaClient.depends = homeClimaClientLib
+homeClimaClient.depends = homeClimaClientService
